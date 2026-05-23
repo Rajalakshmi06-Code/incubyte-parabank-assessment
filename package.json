@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "cucumber-js"},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Rajalakshmi06-Code/incubyte-parabank-assessment.git"
@@ -17,7 +18,9 @@
   },
   "homepage": "https://github.com/Rajalakshmi06-Code/incubyte-parabank-assessment#readme",
   "devDependencies": {
+    "@cucumber/cucumber": "^12.9.0",
     "@playwright/test": "^1.60.0",
-    "@types/node": "^25.9.1"
+    "@types/node": "^25.9.1",
+    "faker": "^6.6.6"
   }
 }
