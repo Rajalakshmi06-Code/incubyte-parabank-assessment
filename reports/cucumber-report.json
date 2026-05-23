@@ -1,0 +1,118 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "parabank-signup-and-login-flow;user-creates-account,-logs-in,-and-verifies-account-balance",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User creates account, logs in, and verifies account balance",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4676191399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user launches parabank website",
+            "match": {
+              "location": "features\\step-definitions\\signup.steps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3389670699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user registers with valid details",
+            "match": {
+              "location": "features\\step-definitions\\signup.steps.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1201889999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "user logs out from application",
+            "match": {
+              "location": "features\\step-definitions\\signup.steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 667779099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user logs in with created credentials",
+            "match": {
+              "location": "features\\step-definitions\\signup.steps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1764216800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "user should see account overview page",
+            "match": {
+              "location": "features\\step-definitions\\signup.steps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 106323100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "user should print account balance",
+            "match": {
+              "location": "features\\step-definitions\\signup.steps.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44634099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1160611000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "parabank-signup-and-login-flow",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Parabank Signup and Login Flow",
+    "tags": [],
+    "uri": "features\\signup.feature"
+  }
+]

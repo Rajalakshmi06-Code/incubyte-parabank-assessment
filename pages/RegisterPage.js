@@ -18,7 +18,7 @@ class RegisterPage {
 
     await this.page.click('input[value="Register"]');
 
-    // ✅ ONLY wait for registration confirmation message
+    
     await this.page.waitForSelector('text=Your account was created successfully', {
       timeout: 20000
     });

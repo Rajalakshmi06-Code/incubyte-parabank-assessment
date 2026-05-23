@@ -1,6 +1,6 @@
 Feature: Parabank Signup and Login Flow
 
-  Scenario: User creates account and logs in successfully
+  Scenario: User creates account, logs in, and verifies account balance
     Given user launches parabank website
     When user registers with valid details
     And user logs out from application
