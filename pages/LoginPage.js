@@ -8,6 +8,8 @@ class LoginPage {
     await this.page.fill('input[name="password"]', password);
 
     await this.page.click('input[value="Log In"]');
+
+    await this.page.waitForLoadState('networkidle');
   }
 }
 

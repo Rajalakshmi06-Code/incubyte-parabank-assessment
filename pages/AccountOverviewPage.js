@@ -10,9 +10,18 @@ class AccountOverviewPage {
   }
 
   async printAccountBalance() {
-    const balance = await this.page.locator('#accountTable').textContent();
+    const firstRow = this.page.locator('#accountTable tbody tr').first();
+    await expect(firstRow).toBeVisible();
 
-    console.log('Account Balance Details:', balance);
+    const accountNumber = await firstRow.locator('td').nth(0).innerText();
+    const balance = await firstRow.locator('td').nth(1).innerText();
+
+    console.log(`Account Number: ${accountNumber}`);
+    console.log(`Account Balance: ${balance}`);
+
+    expect(balance.trim()).not.toBe('');
+
+    return balance.trim();
   }
 }
 

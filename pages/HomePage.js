@@ -4,11 +4,13 @@ class HomePage {
   }
 
   async navigate() {
-    await this.page.goto('https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC');
+    await this.page.goto(
+      'https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC'
+    );
   }
 
   async clickRegister() {
-    await this.page.click('text=Register');
+    await this.page.locator('a[href*="register"]').click();
   }
 }
 
