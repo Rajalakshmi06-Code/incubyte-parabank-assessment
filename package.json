@@ -1,10 +1,10 @@
 {
   "name": "incubyte-parabank-assessment",
   "version": "1.0.0",
-  "description": "",
+  "description": "Parabank automation assessment using Playwright, Cucumber BDD and POM",
   "main": "index.js",
- "scripts": {
-  "test": "cucumber-js --format json:reports/cucumber-report.json"
+  "scripts": {
+    "test": "cucumber-js --format json:reports/cucumber-report.json && node report.js"
   },
   "repository": {
     "type": "git",

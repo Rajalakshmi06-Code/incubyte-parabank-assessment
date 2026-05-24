@@ -4,95 +4,95 @@
     "elements": [
       {
         "description": "",
-        "id": "parabank-signup-and-login-flow;user-creates-account,-logs-in,-and-verifies-account-balance",
+        "id": "parabank-signup-and-login-flow;new-user-registers,-logs-in,-and-verifies-account-balance-is-displayed",
         "keyword": "Scenario",
-        "line": 3,
-        "name": "User creates account, logs in, and verifies account balance",
+        "line": 4,
+        "name": "New user registers, logs in, and verifies account balance is displayed",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 4676191399
+              "duration": 4338253700
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
+            "line": 5,
             "name": "user launches parabank website",
             "match": {
-              "location": "features\\step-definitions\\signup.steps.js:31"
+              "location": "features\\step-definitions\\signup.steps.js:21"
             },
             "result": {
               "status": "passed",
-              "duration": 3389670699
+              "duration": 2150186599
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 5,
+            "line": 6,
             "name": "user registers with valid details",
             "match": {
-              "location": "features\\step-definitions\\signup.steps.js:37"
+              "location": "features\\step-definitions\\signup.steps.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 1201889999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 6,
-            "name": "user logs out from application",
-            "match": {
-              "location": "features\\step-definitions\\signup.steps.js:42"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 667779099
+              "duration": 1249033900
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "user logs in with created credentials",
+            "name": "user logs out from application",
             "match": {
-              "location": "features\\step-definitions\\signup.steps.js:46"
+              "location": "features\\step-definitions\\signup.steps.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 1764216800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "user should see account overview page",
-            "match": {
-              "location": "features\\step-definitions\\signup.steps.js:51"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 106323100
+              "duration": 1441978199
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 9,
-            "name": "user should print account balance",
+            "line": 8,
+            "name": "user logs in with created credentials",
             "match": {
-              "location": "features\\step-definitions\\signup.steps.js:56"
+              "location": "features\\step-definitions\\signup.steps.js:34"
             },
             "result": {
               "status": "passed",
-              "duration": 44634099
+              "duration": 2089456199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "user should see account overview page",
+            "match": {
+              "location": "features\\step-definitions\\signup.steps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47152999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "user should print account balance",
+            "match": {
+              "location": "features\\step-definitions\\signup.steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57210700
             }
           },
           {
@@ -100,11 +100,16 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1160611000
+              "duration": 1841049699
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@signup",
+            "line": 3
+          }
+        ],
         "type": "scenario"
       }
     ],
